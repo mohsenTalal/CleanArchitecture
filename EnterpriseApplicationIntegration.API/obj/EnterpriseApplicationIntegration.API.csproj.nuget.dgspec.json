@@ -1,0 +1,297 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.API\\EnterpriseApplicationIntegration.API.csproj": {}
+  },
+  "projects": {
+    "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.API\\EnterpriseApplicationIntegration.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.API\\EnterpriseApplicationIntegration.API.csproj",
+        "projectName": "EnterpriseApplicationIntegration.API",
+        "projectPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.API\\EnterpriseApplicationIntegration.API.csproj",
+        "packagesPath": "C:\\Users\\aenzi\\.nuget\\packages\\",
+        "outputPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aenzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.thiqah.sa/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Application\\EnterpriseApplicationIntegration.Application.csproj": {
+                "projectPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Application\\EnterpriseApplicationIntegration.Application.csproj"
+              },
+              "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj": {
+                "projectPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Caching.Redis": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Swashbuckle.AspNetCore.Examples": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Application\\EnterpriseApplicationIntegration.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Application\\EnterpriseApplicationIntegration.Application.csproj",
+        "projectName": "EnterpriseApplicationIntegration.Application",
+        "projectPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Application\\EnterpriseApplicationIntegration.Application.csproj",
+        "packagesPath": "C:\\Users\\aenzi\\.nuget\\packages\\",
+        "outputPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aenzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.thiqah.sa/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj": {
+                "projectPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[106.10.1, )"
+            },
+            "SimpleSOAPClient": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj",
+        "projectName": "EnterpriseApplicationIntegration.Core",
+        "projectPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\EnterpriseApplicationIntegration.Core.csproj",
+        "packagesPath": "C:\\Users\\aenzi\\.nuget\\packages\\",
+        "outputPath": "D:\\HomeProject\\EAI\\EnterpriseApplicationIntegration\\EnterpriseApplicationIntegration.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aenzi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://nuget.thiqah.sa/nuget": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

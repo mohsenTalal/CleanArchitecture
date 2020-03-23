@@ -1,0 +1,7 @@
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\bin\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.deps.json
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\bin\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.dll
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\bin\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.pdb
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\obj\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.AssemblyInfoInputs.cache
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\obj\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.AssemblyInfo.cs
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\obj\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.dll
+D:\HomeProject\EAI\EnterpriseApplicationIntegration\EnterpriseApplicationIntegration.Core\obj\Debug\netcoreapp3.1\EnterpriseApplicationIntegration.Core.pdb

@@ -1,0 +1,179 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EnterpriseApplicationIntegration.API</name>
+    </assembly>
+    <members>
+        <member name="T:EnterpriseApplicationIntegration.API.Controllers.LookupsController">
+            <summary>
+            API Controller
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Controllers.LookupsController.#ctor(EnterpriseApplicationIntegration.Application.IServices,EnterpriseApplicationIntegration.Core.LoggerBuilder.AppLog)">
+            <summary>
+            Instantiate a new instance of <see cref="T:EnterpriseApplicationIntegration.API.Controllers.LookupsController"/>
+            </summary>
+            <param name="cocService">Coc Service</param>
+            <param name="log"></param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Controllers.LookupsController.Get">
+            <summary>This API will return a list of active freon types which exist in Saber system</summary>
+            <response code="401">Unauthorized</response>
+            <response code="404">Not Found</response>
+            <response code="500">Internal Server Error</response>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Middlewares.BasicAuthenticationHandler">
+            <summary>
+            Basic Authentication middleware.
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.BasicAuthenticationHandler.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{Microsoft.AspNetCore.Authentication.AuthenticationSchemeOptions},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock,EnterpriseApplicationIntegration.Core.Auth.IAuthRepository,EnterpriseApplicationIntegration.Core.LoggerBuilder.AppLog)">
+            <summary>Initializes a new instance of the <see cref="T:EnterpriseApplicationIntegration.API.Middlewares.BasicAuthenticationHandler"/> class.</summary>
+            <param name="options">The options.</param>
+            <param name="logger">The logger.</param>
+            <param name="encoder">The encoder.</param>
+            <param name="clock">The clock.</param>
+            <param name="authService">The authentication service.</param>
+            <param name="log">Application logger</param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.BasicAuthenticationHandler.HandleAuthenticateAsync">
+            <summary>
+            Handles the authenticate asynchronous.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Middlewares.CustomValidationResult">
+            <summary>
+            Custom Validation Result
+            </summary>
+            <seealso cref="T:Microsoft.AspNetCore.Mvc.IActionResult" />
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.CustomValidationResult.ExecuteResultAsync(Microsoft.AspNetCore.Mvc.ActionContext)">
+            <summary>
+            Executes the result operation of the action method asynchronously. This method is called by MVC to process
+            the result of an action method.
+            </summary>
+            <param name="context">The context in which the result is executed. The context information includes
+            information about the action that was executed and request information.</param>
+            <returns>
+            A task that represents the asynchronous execute operation.
+            </returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Middlewares.ExceptionMiddleware">
+            <summary>
+            Exception middle ware.
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.ExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EnterpriseApplicationIntegration.API.Middlewares.ExceptionMiddleware"/> class.
+            </summary>
+            <param name="next">The next.</param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.ExceptionMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext,EnterpriseApplicationIntegration.Core.LoggerBuilder.AppLog)">
+            <summary>
+            Invokes the asynchronous.
+            </summary>
+            <param name="httpContext">The HTTP context.</param>
+            <param name="log">The log object</param>
+            <returns></returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Middlewares.LocalizationMiddleware">
+            <summary>
+            Localization middle ware.
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.LocalizationMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EnterpriseApplicationIntegration.API.Middlewares.LocalizationMiddleware"/> class.
+            </summary>
+            <param name="next">The next.</param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.LocalizationMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invokes the asynchronous.
+            </summary>
+            <param name="context">The HTTP context.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Middlewares.LoggingMiddleware">
+            <summary>
+            Logging middleware.
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.LoggingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Options.IOptions{EnterpriseApplicationIntegration.Core.Settings.AppSettings})">
+            <summary>
+            Initializes a new instance of the <see cref="T:EnterpriseApplicationIntegration.API.Middlewares.LoggingMiddleware"/> class.
+            </summary>
+            <param name="next">The next.</param>
+            <param name="settings">The settings.</param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.LoggingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext,EnterpriseApplicationIntegration.Core.LoggerBuilder.IAppLogger,EnterpriseApplicationIntegration.Core.LoggerBuilder.AppLog)">
+            <summary>
+            Invokes the specified context.
+            </summary>
+            <param name="context">The context.</param>
+            <param name="appLogger">Application logger instance</param>
+            <param name="log">The log.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Middlewares.HttpStatusCodeExceptionMiddlewareExtensions">
+            <summary>
+            Extension method used to add the middle wares to the HTTP request pipeline.
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.HttpStatusCodeExceptionMiddlewareExtensions.UseExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Uses the exception middleware.
+            </summary>
+            <param name="builder">The builder.</param>
+            <returns></returns>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Middlewares.HttpStatusCodeExceptionMiddlewareExtensions.UseLoggingMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Uses the logging middleware.
+            </summary>
+            <param name="builder">The builder.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Program">
+            <summary>
+            The project entry point.
+            </summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Program.Main(System.String[])">
+            <summary>
+            Defines the entry point of the application.
+            </summary>
+            <param name="args">The arguments.</param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Creates the web host builder.
+            </summary>
+            <param name="args">The arguments.</param>
+            <returns></returns>
+        </member>
+        <member name="T:EnterpriseApplicationIntegration.API.Startup">
+            <summary>Startup class for project configuration</summary>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>Initializes a new instance of the <see cref="T:EnterpriseApplicationIntegration.API.Startup"/> class.</summary>
+            <param name="configuration">The configuration.</param>
+        </member>
+        <member name="P:EnterpriseApplicationIntegration.API.Startup.Configuration">
+            <summary>Gets the configuration.</summary>
+            <value>The configuration.</value>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>Configures the services.</summary>
+            <param name="services">The services.</param>
+        </member>
+        <member name="M:EnterpriseApplicationIntegration.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment,Microsoft.Extensions.Options.IOptions{EnterpriseApplicationIntegration.Core.Settings.AppSettings})">
+            <summary>Configures the specified application.</summary>
+            <param name="app">The application.</param>
+            <param name="env">The Hosting Environment.</param>
+            <param name="options"></param>
+        </member>
+    </members>
+</doc>
