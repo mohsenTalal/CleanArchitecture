@@ -8,9 +8,9 @@ namespace EnterpriseApplicationIntegration.Application
 {
     public class AppLogger : IAppLogger
     {
-        private readonly IThiqahRestClient _restClient;
+        private readonly IMohsenRestClient _restClient;
 
-        public AppLogger(IThiqahRestClient restClient)
+        public AppLogger(IMohsenRestClient restClient)
         {
             _restClient = restClient;
         }
