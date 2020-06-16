@@ -4,10 +4,9 @@ using System.Threading.Tasks;
 namespace EnterpriseApplicationIntegration.Core.HTTP
 {
     /// <summary>
-    /// This library is created by Thiqah Integration team in order to simplify the calling to Rest Services.
     /// Version 1.0.1
     /// </summary>
-    public interface IThiqahRestClient
+    public interface IMohsenRestClient
     {
         /// <summary>Gets or sets the base URL.</summary>
         /// <value>The base URL.</value>
