@@ -17,10 +17,9 @@ using System.Threading.Tasks;
 namespace EnterpriseApplicationIntegration.Application
 {
     /// <summary>
-    /// This library is created by Thiqah Integration team in order to simplify the calling to Rest Services.
     /// Version 1.0.1
     /// </summary>
-    public class ThiqahRestClient : IThiqahRestClient
+    public class MohsenRestClient : IMohsenRestClient
     {
         private readonly AppSettings _settings;
         private readonly AppLog log;
@@ -43,14 +42,14 @@ namespace EnterpriseApplicationIntegration.Application
         public string Password { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the ThiqahRestClient using Basic Authentication
+        /// Initializes a new instance of the IMohsenRestClient  using Basic Authentication
         /// </summary>
         /// <param name="baseURL">The base URL used for all operations</param>
         /// <param name="acceptLanguage">The Accept-Language request HTTP header to determine which language the client uses</param>
         /// <param name="username">An identification used by the client to access the API</param>
         /// <param name="password">A password is a word or string of characters used for authentication to prove identity or access approval to gain access to the API. which is to be kept secret from those not allowed access.</param>
         /// <param name="generateAPIException">if true the service return APIEception if false it will return a GeneralException</param>
-        public ThiqahRestClient(IOptions<AppSettings> settings, AppLog log)
+        public IMohsenRestClient(IOptions<AppSettings> settings, AppLog log)
         // string baseURL, AcceptLanguage acceptLanguage, string username, string password, bool generateAPIException, IAppLogger appLogger)
         {
             this.log = log;
