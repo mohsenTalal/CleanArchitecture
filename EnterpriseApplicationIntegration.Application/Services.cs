@@ -10,10 +10,10 @@ namespace EnterpriseApplicationIntegration.Application
     public class Services : IServices
     {
         private readonly AppLog _log;
-        private readonly IThiqahRestClient _restClient;
+        private readonly IMohsenRestClient _restClient;
         private readonly AppSettings _settings;
 
-        public Services(IOptions<AppSettings> settings, AppLog log, IThiqahRestClient restClient)
+        public Services(IOptions<AppSettings> settings, AppLog log, IMohsenRestClient restClient)
         {
             _log = log;
             _restClient = restClient;
