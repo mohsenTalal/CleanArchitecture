@@ -7,9 +7,9 @@ namespace EnterpriseApplicationIntegration.Application
 {
     public class AuthService : IAuthRepository
     {
-        private readonly IThiqahRestClient restClient;
+        private readonly IMohsenRestClient restClient;
 
-        public AuthService(IThiqahRestClient restClient)
+        public AuthService(IMohsenRestClient restClient)
         {
             this.restClient = restClient;
         }
