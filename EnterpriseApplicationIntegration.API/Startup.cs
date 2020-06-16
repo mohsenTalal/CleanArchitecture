@@ -60,7 +60,7 @@ namespace EnterpriseApplicationIntegration.API
             services.AddScoped(typeof(IAppLogger), typeof(AppLogger));
             services.AddScoped(typeof(IAuthRepository), typeof(AuthService));
             services.AddTransient(typeof(IServices), typeof(Services));
-            services.AddTransient(typeof(IThiqahRestClient), typeof(ThiqahRestClient));
+            services.AddTransient(typeof(IMohsenRestClient ), typeof(MohsenRestClient));
             services.TryAddSingleton<IActionContextAccessor, ActionContextAccessor>();
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
             services.AddHttpClient();
